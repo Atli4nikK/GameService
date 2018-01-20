@@ -1,0 +1,45 @@
+server:
+  port: 8000
+
+
+
+security:
+  basic:
+    realm: Iluha
+  user:
+    name: user
+    password: 123
+###
+#   Database Settings
+###
+spring:
+  jackson:
+      date-format: yyyy-MM-dd
+  datasource:
+    url: jdbc:h2:mem:games; #DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+
+
+###
+#   H2 Settings
+###
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
+
