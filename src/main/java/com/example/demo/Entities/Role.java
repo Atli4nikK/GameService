@@ -1,4 +1,4 @@
-package com.tutorial.tutorial.Entities;
+package com.example.demo.Entities;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

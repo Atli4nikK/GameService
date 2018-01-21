@@ -1,6 +1,6 @@
-package com.tutorial.tutorial.Config;
+package com.example.demo.Config;
 
-import com.tutorial.tutorial.Services.UserDetailsServiceUtil;
+import com.example.demo.Services.UserDetailsServiceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;

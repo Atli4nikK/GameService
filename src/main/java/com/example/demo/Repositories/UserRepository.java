@@ -1,6 +1,6 @@
-package com.tutorial.tutorial.Repositories;
+package com.example.demo.Repositories;
 
-import com.tutorial.tutorial.Entities.User;
+import com.example.demo.Entities.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

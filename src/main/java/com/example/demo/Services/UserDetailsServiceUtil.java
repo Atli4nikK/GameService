@@ -1,7 +1,7 @@
-package com.tutorial.tutorial.Services;
+package com.example.demo.Services;
 
-import com.tutorial.tutorial.Entities.User;
-import com.tutorial.tutorial.Repositories.UserRepository;
+import com.example.demo.Entities.User;
+import com.example.demo.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.core.userdetails.UserDetails;
