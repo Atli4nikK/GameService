@@ -1,4 +1,3 @@
-
 INSERT INTO DEVELOPERS (ID, NAME)
   VALUES
   (1, 'Valve'),
@@ -23,18 +22,18 @@ INSERT INTO GAMES (ID, NAME, REALIZE_DATE, DEVELOPER_ID, PUBLISHER_ID)
 
 
 INSERT INTO ROLES(ID, ROLE)
-    VALUES
-    (1, 'ADMIN'),
-    (2, 'USER');
+  VALUES
+  (1, 'ADMIN'),
+  (2, 'USER');
 
 
 INSERT INTO USERS(ID, USERNAME, PASSWORD)
-    VALUES
-    (1, 'ilya', '$2a$11$EivRRQnfpE9gL9GoQ9ix.OLbivNbMXJFiNpSZ55nl7jaEa3lwmJ.S'), --123
-    (2, 'roma', '$2a$11$B7Vvk/Y/u5MuVlPsBrN3z.XId5Wc2fyUwk3qch3tB1BYyteaE51fS'); --0000
+  VALUES
+  (1, 'ilya', '$2a$11$EivRRQnfpE9gL9GoQ9ix.OLbivNbMXJFiNpSZ55nl7jaEa3lwmJ.S'), --123
+  (2, 'roma', '$2a$11$B7Vvk/Y/u5MuVlPsBrN3z.XId5Wc2fyUwk3qch3tB1BYyteaE51fS'); --0000
 
 
 INSERT INTO USER_ROLE(USER_ID, ROLE_ID)
-    VALUES
-    (1, 1),
-    (2, 2);
+  VALUES
+  (1, 1),
+  (2, 2);
