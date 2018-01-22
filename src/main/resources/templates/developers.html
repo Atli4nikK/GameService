@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Developers</title>
+</head>
+<body>
+<div class="baseblock">
+    <h1>All Developers</h1>
+    <!--<br/><br/>-->
+    <div>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            <tr th:each ="developer : ${developers}">
+                <td th:utext="${developer.id}">...</td>
+                <td th:utext="${developer.name}">...</td>
+            </tr>
+            <div class="inner"><a th:href="@{/index}">Welcome GameService!</a></div>
+        </table>
+    </div>
+</div>
+</body>
+</html>

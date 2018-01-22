@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Publishers</title>
+</head>
+<body>
+<div class="baseblock">
+    <h1>All Publishers</h1>
+    <!--<br/><br/>-->
+    <div>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            <tr th:each ="publisher : ${publishers}">
+                <td th:utext="${publisher.id}">...</td>
+                <td th:utext="${publisher.name}">...</td>
+            </tr>
+            <div class="inner"><a th:href="@{/index}">Welcome GameService!</a></div>
+        </table>
+    </div>
+</div>
+</body>
+</html>

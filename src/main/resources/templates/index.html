@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+</head>
+<body>
+<div class="baseblock">
+    <h1>Welcome GameService!</h1>
+    <div class="button">
+        <div class="outer">
+            <div class="height">
+                <div class="inner"><a th:href="@{/reg}">Registration</a></div>
+                <div class="inner"><a th:href="@{/login}">Authorization</a></div>
+                <div class="inner"><a th:href="@{/logout}">Log Out</a></div>
+                <br/><br/>
+                <div class="inner"><a th:href="@{/games}">Get All Games</a></div>
+                <div class="inner"><a th:href="@{/developers}">Get All Developers</a></div>
+                <div class="inner"><a th:href="@{/publishers}">Get All Publishers</a></div>
+                <div>Что бы получить игру по id введите в URL /games/id</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

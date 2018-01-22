@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Games</title>
+</head>
+<body>
+<div class="baseblock">
+    <!--<h1>All Games</h1>-->
+    <!--<br/><br/>-->
+    <div>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>RealizeDate</th>
+                <th>Developer</th>
+                <th>Publisher</th>
+            </tr>
+            <tr th:each ="game : ${games}">
+                <td th:utext="${game.id}">...</td>
+                <td th:utext="${game.name}">...</td>
+                <td th:utext="${game.realizeDate}">...</td>
+                <td th:utext="${game.developer.getName()}">...</td>
+                <td th:utext="${game.publisher.getName()}">...</td>
+            </tr>
+            <div class="inner"><a th:href="@{/index}">Welcome GameService!</a></div>
+        </table>
+    </div>
+</div>
+</body>
+</html>

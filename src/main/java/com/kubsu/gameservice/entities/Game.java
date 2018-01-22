@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "GAMES")
@@ -25,6 +26,13 @@ public class Game {
     private Publisher publisher;
 
     public Game(){}
+
+    public Game(String name, Date realizeDate, Developer developer, Publisher publisher) {
+        this.name = name;
+        this.realizeDate = realizeDate;
+        this.developer = developer;
+        this.publisher = publisher;
+    }
 
     public long getId() {
         return id;
