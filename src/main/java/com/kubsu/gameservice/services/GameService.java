@@ -1,7 +1,7 @@
-package com.example.demo.Services;
+package com.kubsu.gameservice.services;
 
-import com.example.demo.Entities.Game;
-import com.example.demo.Repositories.GameRepository;
+import com.kubsu.gameservice.entities.Game;
+import com.kubsu.gameservice.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

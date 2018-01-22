@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.kubsu.gameservice.entities;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 

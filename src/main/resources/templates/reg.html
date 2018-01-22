@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Registrarion</title>
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'/>-->
+    <!--<link rel="stylesheet" href="/css/style.css"/>-->
+</head>
+<body>
+<form th:action="@{/reg}" method="post">
+    <h2>Registration</h2>
+    <div><label>Username: <input type="text" name="username"/></label></div>
+    <div><label>Password: <input type="password" name="password"/></label></div>
+    <div><button type="submit">Submit</button></div>
+</form>
+</body>
+</html>

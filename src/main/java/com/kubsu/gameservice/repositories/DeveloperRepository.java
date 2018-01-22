@@ -1,6 +1,6 @@
-package com.example.demo.Repositories;
+package com.kubsu.gameservice.repositories;
 
-import com.example.demo.Entities.Developer;
+import com.kubsu.gameservice.entities.Developer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

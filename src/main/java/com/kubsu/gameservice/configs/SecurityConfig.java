@@ -1,6 +1,6 @@
-package com.example.demo.Config;
+package com.kubsu.gameservice.configs;
 
-import com.example.demo.Services.UserDetailsServiceUtil;
+import com.kubsu.gameservice.services.UserDetailsServiceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
@@ -18,12 +18,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER - 11)
-public class Security extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/", "/reg/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().permitAll()
